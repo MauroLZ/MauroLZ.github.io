@@ -373,7 +373,7 @@
 }
 
 /* Mobile Responsive */
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1125px) {
     .main-content {
         display: grid;
         grid-template-columns: 1fr;
