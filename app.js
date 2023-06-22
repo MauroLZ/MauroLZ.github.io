@@ -6,7 +6,7 @@ const sellers = [
                 name: "Burritos",
                 description: "Descripción de los burricos",
                 price: 10.99,
-                image: "burrito.jpeg"
+                image: "images/burrito.jpeg"
             },
         ]
     },
