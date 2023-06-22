@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+#seller-list {
+    margin-top: 20px;
+}
+
+#seller-items {
+    list-style: none;
+    padding: 0;
+}
+
+.seller-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.seller-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.seller-item h3 {
+    margin: 10px 0;
+}
+
+.seller-item p {
+    margin: 0;
+}
