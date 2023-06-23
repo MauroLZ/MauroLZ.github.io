@@ -20,28 +20,41 @@
     </section>
 </main>
 
+<div class="fb-login-button" data-width="" data-size="large" data-button-type="continue_with" data-layout="default"
+     data-auto-logout-link="false" data-use-continue-as="true"><a href="/auth/facebook">LOGIN</a></div>
 
 <script>
     window.fbAsyncInit = function() {
         FB.init({
-            appId      : '{your-app-id}',
+            appId      : '309570454731703',
             cookie     : true,
             xfbml      : true,
-            version    : '{api-version}'
+            version    : 'v13.0'
         });
-
-        FB.AppEvents.logPageView();
-
     };
 
     (function(d, s, id){
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) {return;}
         js = d.createElement(s); js.id = id;
-        js.src = "https://connect.facebook.net/en_US/sdk.js";
+        js.src = "https://connect.facebook.net/es_ES/sdk.js";
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
 </script>
+
+<script>
+    function checkLoginState() {
+        FB.getLoginStatus(function(response) {
+            if (response.status === 'connected') {
+                // El usuario ha iniciado sesión con éxito, puedes obtener los datos del usuario aquí
+                var accessToken = response.authResponse.accessToken;
+                // Realiza las acciones necesarias con el token de acceso (por ejemplo, enviarlo al backend para la autenticación del usuario)
+            }
+        });
+    }
+</script>
+
 <script src="app.js"></script>
+<script src="server.js"></script>
 </body>
 </html>
